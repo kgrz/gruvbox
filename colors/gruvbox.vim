@@ -86,26 +86,26 @@ let s:is_dark=(&background == 'dark')
 let s:gb = {}
 
 " fill it with absolute colors
-let s:gb.dark0_hard  = ['#1d2021', 234]     " 29-32-33
-let s:gb.dark0       = ['#282828', 235]     " 40-40-40
-let s:gb.dark0_soft  = ['#32302f', 236]     " 50-48-47
-let s:gb.dark1       = ['#3c3836', 237]     " 60-56-54
-let s:gb.dark2       = ['#504945', 239]     " 80-73-69
-let s:gb.dark3       = ['#665c54', 241]     " 102-92-84
-let s:gb.dark4       = ['#7c6f64', 243]     " 124-111-100
-let s:gb.dark4_256   = ['#7c6f64', 243]     " 124-111-100
+let s:gb.dark0_hard     = ['#1d2021', 234]     " 29-32-33
+let s:gb.dark0          = ['#282828', 235]     " 40-40-40
+let s:gb.dark0_soft     = ['#32302f', 236]     " 50-48-47
+let s:gb.dark1          = ['#3c3836', 237]     " 60-56-54
+let s:gb.dark2          = ['#504945', 239]     " 80-73-69
+let s:gb.dark3          = ['#665c54', 241]     " 102-92-84
+let s:gb.dark4          = ['#7c6f64', 243]     " 124-111-100
+let s:gb.dark4_256      = ['#7c6f64', 243]     " 124-111-100
 
-let s:gb.gray_245    = ['#928374', 245]     " 146-131-116
-let s:gb.gray_244    = ['#928374', 244]     " 146-131-116
+let s:gb.gray_245       = ['#928374', 245]     " 146-131-116
+let s:gb.gray_244       = ['#928374', 244]     " 146-131-116
 
-let s:gb.light0_hard = ['#f9f5d7', 230]     " 249-245-215
-let s:gb.light0      = ['#fbf1c7', 229]     " 253-244-193
-let s:gb.light0_soft = ['#f2e5bc', 228]     " 242-229-188
-let s:gb.light1      = ['#ebdbb2', 223]     " 235-219-178
-let s:gb.light2      = ['#d5c4a1', 250]     " 213-196-161
-let s:gb.light3      = ['#bdae93', 248]     " 189-174-147
-let s:gb.light4      = ['#a89984', 246]     " 168-153-132
-let s:gb.light4_256  = ['#a89984', 246]     " 168-153-132
+let s:gb.light0_hard    = ['#f9f5d7', 230]     " 249-245-215
+let s:gb.light0         = ['#fbf1c7', 229]     " 253-244-193
+let s:gb.light0_soft    = ['#f2e5bc', 228]     " 242-229-188
+let s:gb.light1         = ['#ebdbb2', 223]     " 235-219-178
+let s:gb.light2         = ['#d5c4a1', 250]     " 213-196-161
+let s:gb.light3         = ['#bdae93', 248]     " 189-174-147
+let s:gb.light4         = ['#a89984', 246]     " 168-153-132
+let s:gb.light4_256     = ['#a89984', 246]     " 168-153-132
 
 let s:gb.bright_red     = ['#fb4934', 167]     " 251-73-52
 let s:gb.bright_green   = ['#b8bb26', 142]     " 184-187-38
@@ -435,16 +435,16 @@ call s:HL('GruvboxBg4', s:bg4)
 
 call s:HL('GruvboxRed', s:red)
 call s:HL('GruvboxRedBold', s:red, s:none, s:bold)
-call s:HL('GruvboxGreen', s:green)
-call s:HL('GruvboxGreenBold', s:green, s:none, s:bold)
-call s:HL('GruvboxYellow', s:yellow)
-call s:HL('GruvboxYellowBold', s:yellow, s:none, s:bold)
-call s:HL('GruvboxBlue', s:blue)
-call s:HL('GruvboxBlueBold', s:blue, s:none, s:bold)
-call s:HL('GruvboxPurple', s:purple)
-call s:HL('GruvboxPurpleBold', s:purple, s:none, s:bold)
-call s:HL('GruvboxAqua', s:aqua)
-call s:HL('GruvboxAquaBold', s:aqua, s:none, s:bold)
+call s:HL('GruvboxGreen', s:fg1)
+call s:HL('GruvboxGreenBold', s:fg1, s:none, s:bold)
+call s:HL('GruvboxYellow', s:fg1)
+call s:HL('GruvboxYellowBold', s:fg1, s:none, s:bold)
+call s:HL('GruvboxBlue', s:fg1)
+call s:HL('GruvboxBlueBold', s:fg1, s:none, s:bold)
+call s:HL('GruvboxPurple', s:fg1)
+call s:HL('GruvboxPurpleBold', s:fg1, s:none, s:bold)
+call s:HL('GruvboxAqua', s:fg1)
+call s:HL('GruvboxAquaBold', s:fg1, s:none, s:bold)
 call s:HL('GruvboxOrange', s:orange)
 call s:HL('GruvboxOrangeBold', s:orange, s:none, s:bold)
 
@@ -613,7 +613,7 @@ hi! link Constant GruvboxPurple
 hi! link Character GruvboxPurple
 " String constant: "this is a string"
 if g:gruvbox_improved_strings == 0
-  call s:HL('String',  s:green, s:none, s:italicize_strings)
+  call s:HL('String',  s:fg1, s:none, s:italicize_strings)
 else
   call s:HL('String',  s:fg1, s:bg1, s:italicize_strings)
 endif
