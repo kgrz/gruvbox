@@ -620,7 +620,7 @@ endif
 " Boolean constant: TRUE, false
 hi! link Boolean GruvboxPurple
 " Number constant: 234, 0xff
-hi! link Number GruvboxPurple
+hi! link Number GruvboxRed
 " Floating point constant: 2.3e10
 hi! link Float GruvboxPurple
 
@@ -1064,7 +1064,7 @@ hi! link javaScriptBraces GruvboxFg1
 hi! link javaScriptFunction GruvboxAqua
 hi! link javaScriptIdentifier GruvboxRed
 hi! link javaScriptMember GruvboxBlue
-hi! link javaScriptNumber GruvboxPurple
+hi! link javaScriptNumber GruvboxRed
 hi! link javaScriptNull GruvboxPurple
 hi! link javaScriptParens GruvboxFg3
 
@@ -1360,7 +1360,7 @@ hi! link haskellDeclKeyword GruvboxAqua
 hi! link haskellDeriving GruvboxAqua
 hi! link haskellAssocType GruvboxAqua
 
-hi! link haskellNumber GruvboxPurple
+hi! link haskellNumber GruvboxRed
 hi! link haskellPragma GruvboxPurple
 
 hi! link haskellString GruvboxGreen
